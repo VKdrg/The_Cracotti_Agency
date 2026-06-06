@@ -18,12 +18,11 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 30vh;
-
-    padding-bottom: 20vh;
+    gap: 30dvh;
+    padding-bottom: 20dvh;
 }
 
-section:not(.landingscreen) {
+section:not(.landingscreen, .gallery) {
     padding-inline: 10rem;
 }
 
@@ -118,7 +117,7 @@ nav a:hover {
 }
 
 .landingscreen {
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), url(../images/crack-1.webp);
     background-size: cover;
@@ -164,12 +163,12 @@ nav a:hover {
 .gallery {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 3.2rem;
     overflow-x: scroll;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 2rem;
     height: 25vh;
+    padding-inline: 4rem;
 }
 
 .section-title {
@@ -229,6 +228,7 @@ nav a:hover {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    background-position: center;
 }
 
 .p-1 {
@@ -326,7 +326,7 @@ footer {
         flex-direction: column;
     }
 
-    section:not(.landingscreen) {
+    section:not(.landingscreen, .gallery) {
         padding-inline: 5rem;
     }
 
@@ -356,13 +356,13 @@ footer {
 
     .column-right {
         width: 100%;
-        height: 50vh;
+        height: 50dvh;
         align-self: center;
     }
 
     .gallery {
         padding-left: 0;
-        height: 20vh;
+        height: 20dvh;
         gap: 1.5rem;
     }
 
