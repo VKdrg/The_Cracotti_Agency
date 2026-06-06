@@ -1,0 +1,396 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@font-face {
+    font-family: "Avander";
+    src: url(../fonts/Avander-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(../fonts/Nexa-ExtraLight.ttf);
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+
+    padding-bottom: 20vh;
+}
+
+section:not(.landingscreen) {
+    padding-inline: 10rem;
+}
+
+h1 {
+    font-family: "Avander";
+    font-size: 6rem;
+}
+
+h2 {
+    font-family: "Avander";
+    font-size: 4rem;
+    width: fit-content;
+}
+
+h3 {
+    font-family: "Nexa";
+    font-size: 2rem;
+}
+
+.b1 {
+    font-family: "Nexa";
+    color: whitesmoke;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    width: fit-content;
+}
+
+.b2 {
+    font-family: "Nexa";
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+.cta {
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    font-family: "Nexa";
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    color: whitesmoke;
+    width: fit-content;
+}
+
+.cta:hover {
+    background-color: rgba(245, 245, 245, 0.2);
+}
+
+.ctabox {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.menu {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(20px);
+    padding-inline: 10rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-content: center;
+    justify-self: flex-end;
+    color: whitesmoke;
+    align-items: center;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-inline: 1rem;
+    padding-block: 0.3rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.landingscreen {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), url(../images/crack-1.webp);
+    background-size: cover;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+}
+
+.cracosophy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-block: 10rem;
+
+}
+
+.column-right {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%), url(../images/crack-2.webp);
+    background-size: cover;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.gallery::-webkit-scrollbar {
+    opacity: 0%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    height: 25vh;
+}
+
+.section-title {
+    rotate: -90deg;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.cards {
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 20px;
+    width: 20vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.c1 {
+    background: url(../images/crack-3.webp);
+    background-size: cover;
+}
+
+.c2 {
+    background: url(../images/crack-4.webp);
+    background-size: cover;
+}
+
+.c3 {
+    background: url(../images/crack-5.webp);
+    background-size: cover;
+}
+
+.c4 {
+    background: url(../images/crack-6.webp);
+    background-size: cover;
+}
+
+.c5 {
+    background: url(../images/crack-7.webp);
+    background-size: cover;
+}
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.projet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.projet-image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.p-1 {
+    .projet-image {
+        background-image: url(../images/crack-8.webp);
+        background-size: cover;
+    }
+}
+
+.p-2 {
+    justify-content: flex-end;
+    width: 100%;
+
+    .projet-content {
+        align-items: flex-end;
+
+        .b1 {
+            text-align: right;
+        }
+    }
+
+    .projet-image {
+        background-image: url(../images/crack-10.webp);
+        background-size: cover;
+    }
+}
+
+.projet-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .b1 {
+        margin-bottom: 6rem;
+    }
+}
+
+.labels {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 5rem;
+}
+
+.labels-icons {
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .b2 {
+        position: absolute;
+        width: 160px;
+        bottom: -3rem;
+        text-align: center;
+        left: -50%;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-block: 3rem;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+
+    .cta {
+        margin-top: 3rem;
+    }
+}
+
+footer {
+    width: 100%;
+    padding-block: 2rem;
+    justify-items: center;
+}
+
+@media (width < 900px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section:not(.landingscreen) {
+        padding-inline: 5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .menu {
+        padding-inline: 5rem;
+    }
+
+    .landingscreen {
+
+        h1 {
+            font-size: clamp(1rem, 0.6rem + 6.4vw, 6rem);
+            right: 5rem;
+            top: 50%;
+            text-align: right;
+        }
+    }
+
+    .cracosophy {
+        gap: 2rem;
+    }
+
+    .column-right {
+        width: 100%;
+        height: 50vh;
+        align-self: center;
+    }
+
+    .gallery {
+        padding-left: 0;
+        height: 20vh;
+        gap: 1.5rem;
+    }
+
+    .projet {
+        gap: 2rem;
+    }
+
+    .projet-content {
+        gap: 2rem;
+    }
+
+    .p-1 {
+        .projet-image {
+            background-position: 25%;
+        }
+    }
+
+    .p-2 {
+        .projet-image {
+            background-position: 75%;
+
+        }
+    }
+
+}
+
+@media (width < 700px) {
+    .landingscreen {
+        background-position: 20%;
+    }
+}
