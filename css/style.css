@@ -416,11 +416,15 @@ footer {
 @media screen and (width < 700px) {
 
     nav {
-        gap: 1.5rem;
+        gap: 2rem;
+        
+        a {
+            padding: 0;
+        }
     }
 
     .b1 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     section:not(.landingscreen, .gallery) {
