@@ -230,6 +230,10 @@ footer {
 }
 
 @media screen and (width < 700px) {
+
+    nav {
+        gap: 1.5rem;
+    }
     
     .contactform {
         margin-top: 2rem;

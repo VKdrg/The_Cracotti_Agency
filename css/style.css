@@ -415,6 +415,10 @@ footer {
 
 @media screen and (width < 700px) {
 
+    nav {
+        gap: 1.5rem;
+    }
+
     .b1 {
         font-size: 1.25rem;
     }
