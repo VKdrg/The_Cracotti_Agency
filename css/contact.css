@@ -196,7 +196,7 @@ footer {
     justify-self: flex-end;
 }
 
-@media (width < 900px) {
+@media screen and (width < 900px) {
     section:not(.landingscreen) {
         padding-inline: 5rem;
     }
@@ -215,7 +215,7 @@ footer {
     }
 }
 
-@media (width < 700px) {
+@media screen and (width < 700px) {
     section:not(.landingscreen) {
         padding-inline: 5rem;
     }

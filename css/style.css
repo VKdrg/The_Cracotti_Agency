@@ -316,7 +316,7 @@ footer {
     justify-items: center;
 }
 
-@media (width < 900px) {
+@media screen and (width < 900px) {
     body {
         width: 100%;
     }
@@ -389,7 +389,7 @@ footer {
 
 }
 
-@media (width < 700px) {
+@media screen and (width < 700px) {
     .landingscreen {
         background-position: 20%;
     }
