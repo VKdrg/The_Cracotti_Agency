@@ -94,7 +94,7 @@ h3 {
     justify-content: space-between;
 }
 
-nav .desktop {
+nav {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -356,7 +356,7 @@ footer {
     .landingscreen {
 
         h1 {
-            font-size: clamp(1rem, 0.6rem + 6.4vw, 6rem);
+            font-size: clamp(3rem, 0.6rem + 6.4vw, 6rem);
             left: 4rem;
             top: 85%;
             height: fit-content;
@@ -411,10 +411,6 @@ footer {
 
 @media screen and (width < 700px) {
 
-    nav .desktop {
-        display: none;
-    }
-
     .b1 {
         font-size: 1.25rem;
     }
@@ -433,10 +429,6 @@ footer {
 }
 
 @media screen and (width<500px) {
-
-    nav .desktop {
-        display: none;
-    }
 
     .labels-icons {
         width: 64px;
