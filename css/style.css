@@ -97,7 +97,7 @@ h3 {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3.2rem;
     align-content: center;
     justify-self: flex-end;
     color: whitesmoke;
@@ -107,7 +107,6 @@ nav {
 nav a {
     color: whitesmoke;
     text-decoration: none;
-    padding-inline: 1rem;
     padding-block: 0.3rem;
 }
 
@@ -436,7 +435,7 @@ footer {
 @media screen and (width < 700px) {
 
     nav {
-        gap: 2rem;
+        gap: 3.2rem;
 
         a {
             padding: 0;
